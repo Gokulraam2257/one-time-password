@@ -2,10 +2,10 @@ import secrets
 
 import requests
 
-url = 'https://graph.facebook.com/v16.0/104875019237687/messages'
+url = 'https://graph.facebook.com/v16.0/xxxxxxxxxxxxxxxxx/messages'
     
 h = {"Content-Type": "application/json",                         
-     "Authorization": "Bearer EAAIlfUAt6BgBOZB1r8LWXmUkijsNIZC9l97OudJaLLPSXOM0OV6pqdL6L8ZCvJZC7pXbqNotV2utXbPWLGVnXZASB1nWOdNvkacBa1wdYNsO9w9oQwPs2giT1UDfh3ZABzb8BgXUyGN6tHSzoz6hzuZAagZCFZCQ7MckRHlZBpD83MSRzZCAZC9mXZCSWLSC6lAlN6XTJhEBDwXRBswDI5cFR1ZClwIykWzxMlg6EEqcxMCgYGojYZD"}
+     "Authorization": "Bearer <-YOUR_WHATSAPP_API->"}
 
 
 # Function to generate a random secret key
@@ -22,7 +22,7 @@ def generate_otp(secret_key, length=6):
 	a = f"Your One-Time Password for verification is {otp}"
 	d = {
 	    "messaging_product": "whatsapp",
-	    "to": "919489055173",
+	    "to": "<PHONE_NUMBER>",
 	    "type": "text",
 	    "text": {
 	    "preview_url": True,
